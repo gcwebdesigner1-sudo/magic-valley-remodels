@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Quote | Magic Valley Remodels &amp; Repairs</title>
+  <meta name="description" content="Request a free quote from Magic Valley Remodels and Repairs in Twin Falls, Idaho.">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="index.html"><img src="images/logo.jpg" alt="Magic Valley Remodels logo"><span>Magic Valley Remodels</span></a>
+    <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Our Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="quote.html" class="active">Free Quote</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-head" style="--img:url('images/countertops.jpg')">
+    <h1>Get a Free Quote</h1>
+    <p>We'll get back to you as soon as possible</p>
+  </header>
+
+  <main class="wrap">
+    <div class="quote-grid">
+      <form class="quote reveal" action="https://formsubmit.co/magicvalleyremodels@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New quote request from the website">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="row">
+          <div><label for="first">First name</label><input id="first" name="First name" required></div>
+          <div><label for="last">Last name</label><input id="last" name="Last name" required></div>
+        </div>
+        <div class="row">
+          <div><label for="email">Email</label><input id="email" type="email" name="email" required></div>
+          <div><label for="phone">Phone</label><input id="phone" type="tel" name="Phone"></div>
+        </div>
+        <label for="type">Project type</label>
+        <select id="type" name="Project type">
+          <option>Kitchen remodel</option>
+          <option>Bathroom remodel</option>
+          <option>Flooring</option>
+          <option>Countertops</option>
+          <option>Plumbing &amp; fixtures</option>
+          <option>Repairs / handyman</option>
+          <option>Other</option>
+        </select>
+        <label for="msg">Tell us about your project</label>
+        <textarea id="msg" name="Details" required></textarea>
+        <button class="btn" type="submit">Send My Request</button>
+      </form>
+
+      <aside class="contact-card reveal">
+        <h3>Prefer to call?</h3>
+        <a href="tel:+12086136837"><small>Phone</small>208-613-6837</a>
+        <a href="mailto:magicvalleyremodels@gmail.com"><small>Email</small>magicvalleyremodels@gmail.com</a>
+        <p><small>Service area</small>Twin Falls, ID &amp; the Magic Valley</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>&copy; <span id="year"></span> Magic Valley Remodels and Repairs LLC &middot; Twin Falls, ID &middot; <a href="tel:+12086136837">208-613-6837</a></footer>
+  <script src="main.js"></script>
+</body>
+</html>
