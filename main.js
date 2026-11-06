@@ -15,13 +15,12 @@
     if (e.target.tagName === 'A') { links.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
   });
 
-  // ----- Hero video: tall cut on portrait screens, wide cut elsewhere -----
-  const v = document.getElementById('heroVideo');
+  // ----- Hero video: one tall reel on portrait screens, three side-by-side clips elsewhere -----
   const tall = window.innerWidth / window.innerHeight < 0.8;
-  v.poster = tall ? v.dataset.posterTall : v.dataset.posterWide;
+  hero.classList.toggle('is-tall', tall);
+  const heroVids = tall ? [hero.querySelector('.hero-tall')] : [...hero.querySelectorAll('.hero-panels video')];
   if (!reduce) {
-    v.src = tall ? v.dataset.tall : v.dataset.wide;
-    v.play().catch(() => {});
+    heroVids.forEach((vid) => { vid.src = vid.dataset.src; vid.play().catch(() => {}); });
   }
 
   // ----- Scroll-linked: hero fade, nav, before/after wipe -----
