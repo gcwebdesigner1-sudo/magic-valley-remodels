@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kitchen &amp; Bathroom Remodeling in Twin Falls, ID | Magic Valley Remodels</title>
-  <meta name="description" content="Kitchen and bathroom remodels, flooring, countertops and home repairs in Twin Falls and the Magic Valley since 2000. Call 208-613-6837 for a free quote.">
+  <title>Bathroom Remodeling in Twin Falls, ID | Magic Valley Remodels &amp; Repairs</title>
+  <meta name="description" content="Custom bathroom remodels, walk-in tile showers and high-end home renovations in Twin Falls and the Magic Valley since 2003. Call 208-613-6837 for a free quote.">
   <link rel="canonical" href="https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Magic Valley Remodels &amp; Repairs | Twin Falls, ID">
-  <meta property="og:description" content="Kitchen, bathroom, flooring and repair work in Twin Falls since 2000. Free quotes: 208-613-6837.">
-  <meta property="og:image" content="https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/images/hero.jpg">
+  <meta property="og:description" content="Custom bathrooms, tile showers and home renovations in Twin Falls since 2003. Free quotes: 208-613-6837.">
+  <meta property="og:image" content="https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/media/master-after.jpg">
   <meta property="og:url" content="https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#13285a">
+  <meta name="theme-color" content="#f5efe6">
   <link rel="icon" href="images/logo.jpg">
-  <link rel="preload" as="image" href="images/hero.jpg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -22,138 +25,251 @@
     "name": "Magic Valley Remodels and Repairs LLC",
     "url": "https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/",
     "logo": "https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/images/logo.jpg",
-    "image": "https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/images/hero.jpg",
+    "image": "https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/media/master-after.jpg",
     "telephone": "+1-208-613-6837",
     "email": "magicvalleyremodels@gmail.com",
-    "foundingDate": "2000",
+    "foundingDate": "2003",
+    "sameAs": ["https://www.instagram.com/magic_valley_remodels/"],
     "address": { "@type": "PostalAddress", "addressLocality": "Twin Falls", "addressRegion": "ID", "addressCountry": "US" },
     "areaServed": [{ "@type": "City", "name": "Twin Falls" }, { "@type": "Place", "name": "Magic Valley, Idaho" }],
     "makesOffer": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen remodeling" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bathroom remodeling" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flooring installation" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Countertop installation" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Plumbing fixtures" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Walk-in tile showers" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen remodeling" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom closets and built-ins" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home repairs" } }
     ]
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="nav">
-    <a class="brand" href="index.html"><img src="images/logo.jpg" alt="Magic Valley Remodels logo"><span>Magic Valley Remodels</span></a>
-    <button class="menu-btn" aria-label="Open menu">&#9776;</button>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="gallery.html">Our Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="quote.html">Free Quote</a></li>
+  <nav class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Magic Valley Remodels, back to top">
+      <img src="images/logo.jpg" alt="Magic Valley Remodels and Repairs logo" width="44" height="44">
+      <span>Magic Valley <em>Remodels &amp; Repairs</em></span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <ul class="links">
+      <li><a href="#before-after">Before &amp; After</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#quote" class="nav-cta">Free Quote</a></li>
     </ul>
   </nav>
 
-  <header class="hero">
-    <div class="hero-bg"></div>
+  <!-- 1. Hero: video of his work, name, quote button, phone -->
+  <header class="hero" id="top">
+    <div class="hero-media">
+      <video id="heroVideo" muted loop playsinline preload="metadata" poster="media/hero-wide.jpg"
+             data-wide="media/hero-wide.mp4" data-tall="media/hero-tall.mp4"
+             data-poster-wide="media/hero-wide.jpg" data-poster-tall="media/hero-tall.jpg"></video>
+    </div>
+    <div class="hero-shade"></div>
     <div class="hero-inner">
-      <h1>Magic Valley</h1>
-      <p class="sub">Remodels &amp; Repairs</p>
-      <div class="cta-row">
-        <a class="btn pulse" href="quote.html">Get a Free Quote</a>
-        <a class="phone" href="tel:+12086136837">
+      <h1>
+        <span class="line"><span>Magic</span></span>
+        <span class="line"><span>Valley</span></span>
+      </h1>
+      <p class="hero-sub">Remodels &amp; Repairs</p>
+      <div class="hero-ctas">
+        <a class="btn btn-brass" href="#quote">Get a Free Quote</a>
+        <a class="btn btn-ghost" href="tel:+12086136837">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
           208-613-6837
         </a>
       </div>
     </div>
-    <a class="scroll-cue" href="#services" aria-label="Scroll down"><span></span></a>
+    <a class="scroll-hint" href="#intro" aria-label="Scroll to see our work"><span></span></a>
   </header>
 
-  <section id="services" class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">What we do</span>
-      <h2>Our Services</h2>
-      <p class="lead">Every job starts with a sit-down to understand what you need. Small repairs and full remodels get the same care.</p>
-    </div>
-    <div class="grid">
-      <article class="card reveal">
-        <img src="images/hero.jpg" alt="Remodeled white kitchen with marble island" loading="lazy">
-        <div class="body"><h3>Kitchen Remodels</h3><p>Cabinets, islands, lighting and layouts built around how your family cooks and gathers.</p></div>
-      </article>
-      <article class="card reveal">
-        <img src="images/project.jpg" alt="Bathroom remodel with navy wainscoting and soaking tub" loading="lazy">
-        <div class="body"><h3>Bathroom Remodels</h3><p>Tubs, showers, tile, vanities and trim work that turn a dated bathroom into a retreat.</p></div>
-      </article>
-      <article class="card reveal">
-        <img src="images/flooring.jpg" alt="Wood flooring installation" loading="lazy">
-        <div class="body"><h3>Flooring</h3><p>Hardwood, laminate, LVP and tile, installed level, tight and built to last.</p></div>
-      </article>
-      <article class="card reveal">
-        <img src="images/countertops.jpg" alt="Countertop measurement" loading="lazy">
-        <div class="body"><h3>Countertops</h3><p>Measured right and installed clean, from quartz and stone to butcher block.</p></div>
-      </article>
-      <article class="card reveal">
-        <img src="images/plumbing.jpg" alt="Plumbing repair under a sink" loading="lazy">
-        <div class="body"><h3>Plumbing &amp; Fixtures</h3><p>Faucets, sinks, toilets, disposals and fixture upgrades handled the right way.</p></div>
-      </article>
-      <article class="card reveal">
-        <img src="images/background2.jpg" alt="Modern bathroom with walk-in shower" loading="lazy">
-        <div class="body"><h3>Repairs &amp; Handyman</h3><p>Drywall, doors, trim, paint touch-ups and the to-do list you haven't gotten to.</p></div>
-      </article>
+  <!-- 2. Intro (calm) -->
+  <section class="intro" id="intro">
+    <div class="wrap intro-grid">
+      <div class="reveal">
+        <p class="eyebrow">Twin Falls &middot; Since 2003</p>
+        <h2>Bathrooms built to the standard of the house around them.</h2>
+      </div>
+      <div class="reveal">
+        <p class="lead">Most of my work these days is bathrooms: walk-in tile showers, soaking tubs, double vanities and the closets next to them, in homes where the finish work has to be right.</p>
+        <ul class="facts">
+          <li><strong>20+ years</strong><span>remodeling in the Magic Valley</span></li>
+          <li><strong>Idaho's Best</strong><span>2026 nominee</span></li>
+          <li><strong>Free</strong><span>quotes, no pressure</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section id="work" class="alt">
+  <!-- 3. Before & after (the one intense section) -->
+  <section class="ba" id="before-after">
     <div class="wrap">
-      <div class="reveal">
-        <span class="eyebrow">Take a look</span>
-        <h2>Our Work</h2>
+      <div class="section-head reveal">
+        <p class="eyebrow">Before &amp; After</p>
+        <h2>Same room. Different house.</h2>
+        <p class="lead">Scroll and the finished room slides in. Drag the handle to compare for yourself.</p>
       </div>
-      <div class="gallery">
-        <figure class="reveal"><img src="images/project.jpg" alt="Bathroom with navy wainscoting and soaking tub" loading="lazy"><figcaption>Bathroom Remodel</figcaption></figure>
-        <figure class="reveal"><img src="images/hero.jpg" alt="White kitchen with marble waterfall island" loading="lazy"><figcaption>Kitchen &amp; Island</figcaption></figure>
-        <figure class="reveal"><img src="images/flooring.jpg" alt="Wood flooring" loading="lazy"><figcaption>Wood Flooring</figcaption></figure>
-        <figure class="reveal"><img src="images/background2.jpg" alt="Modern bathroom with glass shower" loading="lazy"><figcaption>Walk-in Shower</figcaption></figure>
-        <figure class="reveal"><img src="images/countertops.jpg" alt="Countertop measuring" loading="lazy"><figcaption>Countertops</figcaption></figure>
-        <figure class="reveal"><img src="images/plumbing.jpg" alt="Plumbing work" loading="lazy"><figcaption>Plumbing</figcaption></figure>
-      </div>
-    </div>
-  </section>
 
-  <section id="about" class="wrap">
-    <div class="split">
-      <div class="reveal">
-        <span class="eyebrow">Since 2000</span>
-        <h2>Local craftsmanship you can count on</h2>
-        <p class="lead">Since 2000, Magic Valley Remodels and Repairs LLC has provided skilled workmanship and top-quality service to the people of Twin Falls, Idaho.</p>
-        <p class="lead" style="margin-top:14px">Whatever the job, I start by meeting with you to understand what you need, from the simplest fixes to complex renovation projects.</p>
-        <div class="stats">
-          <div><strong>25+</strong><span>Years in business</span></div>
-          <div><strong>Twin Falls</strong><span>&amp; the Magic Valley</span></div>
+      <div class="ba-feature">
+        <figure class="compare compare-lg" data-compare>
+          <img src="media/shower-before.jpg" alt="Shower before the remodel: dated tile and glass door" loading="lazy" width="720" height="958">
+          <span class="tag tag-before">Before</span>
+          <div class="after"><img src="media/shower-after.jpg" alt="Shower after the remodel: walk-in tile shower with pebble niche and bench" loading="lazy" width="720" height="958"><span class="tag tag-after">After</span></div>
+          <button class="handle" aria-label="Drag to compare before and after"><span></span></button>
+        </figure>
+        <div class="ba-copy reveal">
+          <h3>Walk-in tile shower</h3>
+          <p>Took the old shower down to the studs, enlarged it, and rebuilt it with large-format tile, a river-pebble border, a recessed niche, a corner bench and a tiled floor.</p>
+          <ul class="spec">
+            <li>Full tear-out and new waterproofing</li>
+            <li>Pebble accent band and niche</li>
+            <li>Built-in corner bench</li>
+          </ul>
         </div>
       </div>
-      <img class="reveal" src="images/project.jpg" alt="Finished bathroom remodel" loading="lazy">
-    </div>
-  </section>
 
-  <section id="quote" class="band">
-    <div class="wrap">
-      <h2>Get Your Free Quote</h2>
-      <p class="lead">Tell us about your project, or just give us a call.</p>
-      <div class="band-ctas">
-        <a class="btn" href="quote.html">Request a Free Quote</a>
-        <a class="phone-link" href="tel:+12086136837">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
-          Call 208-613-6837
-        </a>
+      <div class="ba-pair">
+        <figure class="compare" data-compare>
+          <img src="media/master-before.jpg" alt="Master bathroom before: oak vanity and laminate counter" loading="lazy" width="580" height="774">
+          <span class="tag tag-before">Before</span>
+          <div class="after"><img src="media/master-after.jpg" alt="Master bathroom after: dark vanity with granite top and tower cabinet" loading="lazy" width="580" height="774"><span class="tag tag-after">After</span></div>
+          <button class="handle" aria-label="Drag to compare before and after"><span></span></button>
+          <figcaption>Master bath</figcaption>
+        </figure>
+        <figure class="compare compare-wide" data-compare>
+          <img src="media/kitchen-before.jpg" alt="Kitchen before: oak cabinets and vinyl floor" loading="lazy" width="720" height="656">
+          <span class="tag tag-before">Before</span>
+          <div class="after"><img src="media/kitchen-after.jpg" alt="Kitchen after: white cabinets, stainless appliances, new flooring" loading="lazy" width="720" height="656"><span class="tag tag-after">After</span></div>
+          <button class="handle" aria-label="Drag to compare before and after"><span></span></button>
+          <figcaption>Kitchen</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <footer>&copy; <span id="year"></span> Magic Valley Remodels and Repairs LLC &middot; Twin Falls, ID &middot; <a href="tel:+12086136837">208-613-6837</a> &middot; <a href="mailto:magicvalleyremodels@gmail.com">magicvalleyremodels@gmail.com</a></footer>
+  <!-- 4. Recent work, real video from his jobs -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Recent Work</p>
+        <h2>Straight from the job site.</h2>
+        <p class="lead">Short clips from recent projects. They play as you scroll past.</p>
+      </div>
+      <div class="work-grid">
+        <article class="clip reveal">
+          <div class="clip-media"><video muted loop playsinline preload="none" poster="media/proj-master.jpg" src="media/proj-master.mp4"></video></div>
+          <h3>Master bath &amp; walk-in closet</h3>
+          <p>Glass shower, freestanding tub, double vanity and floor-to-ceiling closet shelving.</p>
+        </article>
+        <article class="clip reveal">
+          <div class="clip-media"><video muted loop playsinline preload="none" poster="media/proj-marble.jpg" src="media/proj-marble.mp4"></video></div>
+          <h3>Marble-look shower &amp; soaking tub</h3>
+          <p>Enlarged walk-in shower with linear drain and a freestanding tub under the window.</p>
+        </article>
+        <article class="clip reveal">
+          <div class="clip-media"><video muted loop playsinline preload="none" poster="media/proj-pebble.jpg" src="media/proj-pebble.mp4"></video></div>
+          <h3>Pebble-accent tile shower</h3>
+          <p>From bare studs to finished tile, niche and bench.</p>
+        </article>
+        <article class="clip reveal">
+          <div class="clip-media"><video muted loop playsinline preload="none" poster="media/proj-rebuild.jpg" src="media/proj-rebuild.mp4"></video></div>
+          <h3>Full bathroom rebuild</h3>
+          <p>Dated tub and tile out, new shower, vanity, lighting and flooring in.</p>
+        </article>
+        <article class="clip reveal">
+          <div class="clip-media"><video muted loop playsinline preload="none" poster="media/proj-glass.jpg" src="media/proj-glass.mp4"></video></div>
+          <h3>Framed glass shower</h3>
+          <p>Black grid sliding door and new surround.</p>
+        </article>
+        <article class="clip reveal">
+          <div class="clip-media"><video muted loop playsinline preload="none" poster="media/proj-lodge.jpg" src="media/proj-lodge.mp4"></video></div>
+          <h3>Lodge great room</h3>
+          <p>Timber ceiling, antler chandeliers and finish work on a large custom home.</p>
+        </article>
+      </div>
+      <p class="more reveal"><a href="https://www.instagram.com/magic_valley_remodels/" target="_blank" rel="noopener">See more on Instagram &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- 5. Services (calm) -->
+  <section class="services" id="services">
+    <div class="wrap services-grid">
+      <div class="svc-main">
+        <p class="eyebrow">What I Do</p>
+        <h2>Bathrooms first. The rest of the house, too.</h2>
+        <ul class="svc-list">
+          <li><strong>Walk-in &amp; curbless showers</strong><span>Tile, niches, benches, linear drains, glass</span></li>
+          <li><strong>Master bath remodels</strong><span>Layouts, soaking tubs, double vanities, lighting</span></li>
+          <li><strong>Custom tile work</strong><span>Large-format, mosaic, pebble and accent bands</span></li>
+          <li><strong>Closets &amp; built-ins</strong><span>Shelving and storage that fits the room</span></li>
+        </ul>
+      </div>
+      <div class="svc-side">
+        <h3>Also</h3>
+        <ul>
+          <li>Kitchen remodels</li>
+          <li>Flooring</li>
+          <li>Custom-home finish work</li>
+          <li>Repairs, including emergency fixes</li>
+        </ul>
+        <a class="btn btn-navy" href="#quote">Start a project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. About (calm) -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <img src="media/proj-lodge.jpg" alt="Great room with timber ceiling and antler chandelier" loading="lazy" width="540" height="720">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Remodeling since 2003.</h2>
+        <p class="lead">I started remodeling in 2003 and have been at it in the Magic Valley ever since. Every job starts the same way: I come out, look at the space and listen to what you want before anything gets quoted.</p>
+        <p class="lead">Small fix or full master suite, it gets the same care. Magic Valley Remodels was nominated for Idaho's Best in 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Quote -->
+  <section class="quote" id="quote">
+    <div class="wrap quote-grid">
+      <div>
+        <p class="eyebrow eyebrow-light">Free Quote</p>
+        <h2>Tell me about your bathroom.</h2>
+        <p class="lead">Send a few details and I'll get back to you as soon as I can. Or just call.</p>
+        <a class="phone-big" href="tel:+12086136837">208-613-6837</a>
+        <a class="mail" href="mailto:magicvalleyremodels@gmail.com">magicvalleyremodels@gmail.com</a>
+        <p class="area">Twin Falls &amp; the Magic Valley, Idaho</p>
+      </div>
+      <form class="form" action="https://formsubmit.co/magicvalleyremodels@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New quote request from the website">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="row">
+          <label>Name<input name="Name" autocomplete="name" required></label>
+          <label>Phone<input name="Phone" type="tel" autocomplete="tel" required></label>
+        </div>
+        <label>Email<input name="email" type="email" autocomplete="email"></label>
+        <label>Project
+          <select name="Project">
+            <option>Bathroom remodel</option>
+            <option>Walk-in / tile shower</option>
+            <option>Master suite</option>
+            <option>Kitchen</option>
+            <option>Other / repair</option>
+          </select>
+        </label>
+        <label>Details<textarea name="Details" rows="4" placeholder="Size of the room, what you'd like changed, timing"></textarea></label>
+        <button class="btn btn-brass" type="submit">Send Request</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="images/logo.jpg" alt="" width="56" height="56">
+    <p>&copy; <span id="year"></span> Magic Valley Remodels and Repairs LLC &middot; Twin Falls, Idaho</p>
+    <p><a href="tel:+12086136837">208-613-6837</a> &middot; <a href="https://www.instagram.com/magic_valley_remodels/" target="_blank" rel="noopener">Instagram</a></p>
+  </footer>
 
   <script src="main.js"></script>
 </body>
