@@ -15,12 +15,13 @@
     if (e.target.tagName === 'A') { links.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
   });
 
-  // ----- Hero video: one tall reel on portrait screens, three side-by-side clips elsewhere -----
+  // ----- Hero video: one video, tall cut on portrait screens -----
+  const v = document.getElementById('heroVideo');
   const tall = window.innerWidth / window.innerHeight < 0.8;
-  hero.classList.toggle('is-tall', tall);
-  const heroVids = tall ? [hero.querySelector('.hero-tall')] : [...hero.querySelectorAll('.hero-panels video')];
+  v.poster = tall ? v.dataset.posterTall : v.dataset.posterWide;
   if (!reduce) {
-    heroVids.forEach((vid) => { vid.src = vid.dataset.src; vid.play().catch(() => {}); });
+    v.src = tall ? v.dataset.tall : v.dataset.wide;
+    v.play().catch(() => {});
   }
 
   // ----- Scroll-linked: hero fade, nav, before/after wipe -----
@@ -78,15 +79,33 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
   document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
 
-  // ----- Project clips play only while on screen -----
+  // ----- Project clips: only the one nearest the middle of the screen plays -----
+  const clips = [...document.querySelectorAll('.clip video')];
+  function pickClip() {
+    const mid = window.innerHeight / 2;
+    let best = null, bestDist = Infinity;
+    clips.forEach((c) => {
+      const r = c.getBoundingClientRect();
+      const visible = r.bottom > window.innerHeight * 0.15 && r.top < window.innerHeight * 0.85;
+      const d = Math.abs(r.top + r.height / 2 - mid);
+      if (visible && d < bestDist) { best = c; bestDist = d; }
+    });
+    clips.forEach((c) => { if (c !== best && !c.paused) c.pause(); });
+    if (best && best.paused) best.play().catch(() => {});
+  }
+  // Pause the hero once it's scrolled away so only one video ever runs
+  function heroPlayback() {
+    if (reduce) return;
+    const off = window.scrollY > hero.offsetHeight * 0.9;
+    if (off && !v.paused) v.pause();
+    if (!off && v.paused) v.play().catch(() => {});
+  }
   if (!reduce) {
-    const vio = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) e.target.play().catch(() => {});
-        else e.target.pause();
-      });
-    }, { threshold: 0.35 });
-    document.querySelectorAll('.clip video').forEach((el) => vio.observe(el));
+    let last = 0;
+    const tick = () => { const now = Date.now(); if (now - last > 120) { last = now; heroPlayback(); if (clips.length) pickClip(); } };
+    window.addEventListener('scroll', tick, { passive: true });
+    window.addEventListener('scrollend', () => { heroPlayback(); if (clips.length) pickClip(); });
+    if (clips.length) pickClip();
   }
 
   document.getElementById('year').textContent = new Date().getFullYear();
