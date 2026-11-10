@@ -1,0 +1,13 @@
+# Magic Valley Remodels and Repairs LLC
+
+> Bathroom remodeling and walk-in tile showers in Twin Falls and the Magic Valley, Idaho. Owner Tito Herrera, remodeling since 2003. Rated 5.0 on Google (11 reviews).
+
+- Phone: 208-613-6837
+- Email: magicvalleyremodels@gmail.com
+- Hours: Monday to Friday, 8 AM to 6 PM
+- Service area: Twin Falls and the surrounding Magic Valley, Idaho
+
+## Pages
+- [Home](https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/): overview, before and after, recent projects, reviews, FAQ, quote form
+- [Bathroom remodeling](https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/bathroom-remodeling/): full remodels and tub replacements
+- [Walk-in showers and tile](https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/walk-in-showers/): shower enlargements, niches, benches, accent tile
