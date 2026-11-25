@@ -8,6 +8,7 @@
 - Service area: Twin Falls and the surrounding Magic Valley, Idaho
 
 ## Pages
-- [Home](https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/): overview, recent work, before and after, services, reviews, FAQ, quote form
-- [Bathroom remodeling](https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/bathroom-remodeling/): full remodels and tub replacements
+- [Home](https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/): overview, featured projects, services, process, before and after, reviews, FAQ, quote form
+- [Projects](https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/projects/): photo galleries of recent bathrooms, showers, an accessible shower and a kitchen
+- [Bathroom remodeling](https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/bathroom-remodeling/): primary suites, full remodels and tub replacements
 - [Walk-in and accessible showers](https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/walk-in-showers/): shower enlargements, roll-in showers, niches, benches, accent tile
