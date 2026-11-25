@@ -74,6 +74,12 @@ p { max-width: 58ch; }
 .util span, .util a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
 .util .icon { width: 14px; height: 14px; color: var(--gold-soft); }
 .util .grp { display: flex; gap: 26px; }
+.util .util-r { align-items: center; gap: 20px; }
+.util .util-soc { gap: 4px; padding-right: 20px; border-right: 1px solid rgba(127, 127, 127, .35); }
+.util .util-soc a { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; transition: background-color .3s; }
+.util .util-soc a:hover { background: rgba(127, 127, 127, .2); }
+.util .util-soc .icon { width: 15px; height: 15px; color: currentColor; }
+@media (min-width: 1061px) { .util .util-soc { display: none; } }
 .page .util { position: relative; color: var(--ink-soft); background: var(--stone); border-bottom: 0; }
 .page .util .icon { color: var(--gold); }
 
@@ -112,7 +118,7 @@ p { max-width: 58ch; }
   .nav:not(.solid) .links .btn-navy { background: var(--navy); }
   .util .grp span:not(:first-child) { display: none; }
 }
-@media (max-width: 560px) { .util .grp .hide-sm { display: none; } .brand .bn { font-size: 1.3rem; } }
+@media (max-width: 560px) { .util .grp .hide-sm { display: none; } .util .util-r { gap: 12px; } .util .util-soc { padding-right: 12px; gap: 0; } .util .grp:first-child span { font-size: 0; gap: 0; } .util .grp:first-child span::after { content: "Twin Falls, ID"; font-size: .78rem; margin-left: 6px; } .brand .bn { font-size: 1.3rem; } }
 
 /* ---------- hero: split on wide screens (copy left, whole photo right); full-bleed on phones ---------- */
 .hero { position: relative; height: 100vh; height: 100svh; min-height: 640px; overflow: hidden; color: #fff; background: var(--navy-deep); }
