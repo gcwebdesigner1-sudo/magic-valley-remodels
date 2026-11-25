@@ -90,6 +90,11 @@ p { max-width: 58ch; }
 .links a:not(.btn)::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform .45s var(--ease); }
 .links a:not(.btn):hover::after, .links a[aria-current="page"]::after { transform: scaleX(1); transform-origin: left; }
 .links .btn { padding: 15px 24px; font-size: .74rem; letter-spacing: .14em; }
+.links .nav-soc { display: flex; align-items: center; gap: 6px; padding-left: clamp(10px, 1.4vw, 22px); border-left: 1px solid currentColor; border-color: rgba(127, 127, 127, .35); }
+.links .nav-soc a { display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border-radius: 50%; transition: background-color .3s, color .3s; }
+.links .nav-soc a::after { display: none; }
+.links .nav-soc a:hover { background: rgba(127, 127, 127, .18); }
+.links .nav-soc .icon { width: 18px; height: 18px; }
 .nav:not(.solid) .links .btn-navy { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.5); }
 .menu-btn { display: none; width: 48px; height: 48px; border: 0; background: none; color: inherit; cursor: pointer; place-items: center; }
 .menu-btn .icon { width: 28px; height: 28px; }
@@ -102,6 +107,8 @@ p { max-width: 58ch; }
   .links.open { opacity: 1; visibility: visible; transform: none; }
   .links li a:not(.btn) { display: block; padding: 18px 2px; border-bottom: 1px solid var(--line); font-size: .9rem; }
   .links .btn { margin-top: 20px; width: 100%; padding: 18px; }
+  .links .nav-soc { border-left: 0; padding: 18px 0 0; gap: 12px; }
+  .links li.nav-soc a:not(.btn) { display: grid; width: 44px; height: 44px; padding: 0; border: 1px solid var(--line); }
   .nav:not(.solid) .links .btn-navy { background: var(--navy); }
   .util .grp span:not(:first-child) { display: none; }
 }
@@ -294,6 +301,10 @@ p { max-width: 58ch; }
 .about .ph { aspect-ratio: 4 / 5; overflow: hidden; }
 .about .ph img { width: 100%; height: 112%; object-fit: cover; }
 .about p { margin-top: 20px; color: var(--ink-soft); }
+.about .ph-portrait { aspect-ratio: 672 / 678; background: #000; }
+.about .ph-portrait img { height: 100%; animation: none !important; }
+.kinds { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin: calc(-1 * clamp(24px, 3vw, 48px)) 0 clamp(48px, 6vw, 80px); }
+.kinds li { padding: 10px 18px; border: 1px solid var(--line); border-radius: 999px; font-size: .82rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); background: var(--paper); }
 
 /* ---------- FAQ ---------- */
 .faq-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: clamp(40px, 7vw, 120px); align-items: start; }
