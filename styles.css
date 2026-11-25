@@ -328,7 +328,7 @@ p { max-width: 58ch; }
 .gal .p { grid-column: span 4; aspect-ratio: 3 / 4; }
 .gal .l { grid-column: span 8; aspect-ratio: 4 / 3; }
 .gal .big { grid-column: span 6; aspect-ratio: 3 / 4; }
-.split-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(36px, 6vw, 100px); align-items: center; padding: clamp(60px, 7vw, 110px) 0; }
+.split-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(36px, 6vw, 100px); align-items: center; padding-block: clamp(60px, 7vw, 110px); }
 .split-hero .ph { aspect-ratio: 4 / 5; overflow: hidden; }
 .split-hero .ph img { width: 100%; height: 100%; object-fit: cover; }
 .split-hero h1 { font-size: clamp(3rem, 6.2vw, 6rem); line-height: .98; }
