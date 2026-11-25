@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gcwebdesigner1-sudo.github.io/magic-valley-remodels/sitemap.xml
+Sitemap: https://magicvalleyremodels.com/sitemap.xml
